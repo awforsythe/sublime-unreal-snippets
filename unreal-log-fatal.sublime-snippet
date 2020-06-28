@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+UE_LOG(Log${TM_FILEPATH/.*\/Source\/(.*)\/(?:Private|Public)\/.*/$1/}, Fatal, TEXT("${1:Fatal error}"));
+]]></content>
+	<tabTrigger>ulf</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

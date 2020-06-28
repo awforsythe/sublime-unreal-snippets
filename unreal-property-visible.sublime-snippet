@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="${TM_FILEPATH/.*\/Source\/(.*)\/(?:Private|Public)\/.*/$1/}")
+${2:int32} ${1:SomeProperty};
+]]></content>
+	<tabTrigger>upv</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

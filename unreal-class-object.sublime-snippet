@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+#pragma once
+
+#include "CoreMinimal.h"
+#include "UObject/Object.h"
+
+UCLASS()
+class U${TM_FILENAME/([^\.]+)\..*/$1/} : public UObject
+{
+	GENERATED_BODY()
+
+public:
+	$1	
+};
+
+]]></content>
+	<tabTrigger>uco</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

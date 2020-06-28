@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+${1:_}${TM_FILENAME/([^\.]+)\..*/$1/}(const FObjectInitializer& ObjectInitializer);
+]]></content>
+	<tabTrigger>ufc</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components")
+${class USceneComponent*} ${1:SomeComponent};
+]]></content>
+	<tabTrigger>upv</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

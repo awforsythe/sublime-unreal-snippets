@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+#pragma once
+
+#include "Logging/LogMacros.h"
+
+DECLARE_LOG_CATEGORY_EXTERN(Log${TM_FILEPATH/.*\/Source\/(.*)\/(?:Private|Public)\/.*/$1/}, All, All);
+
+]]></content>
+	<tabTrigger>ulh</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

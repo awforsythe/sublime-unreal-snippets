@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Components/ActorComponent.h"
+
+UCLASS()
+class U${TM_FILENAME/([^\.]+)\..*/$1/} : public UActorComponent
+{
+	GENERATED_BODY()
+
+public:
+	$1	
+};
+
+]]></content>
+	<tabTrigger>ucc</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

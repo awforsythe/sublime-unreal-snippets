@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+using UnrealBuildTool;
+
+public class ${TM_FILENAME/([^\.]+)\..*/$1/}Target : TargetRules
+{
+	public ${TM_FILENAME/([^\.]+)\..*/$1/}Target(TargetInfo Target) : base(Target)
+	{
+		Type = TargetType.Game;
+		DefaultBuildSettings = BuildSettingsVersion.V2;
+		ExtraModuleNames.AddRange( new string[] { "$1" } );
+	}
+}
+
+]]></content>
+	<tabTrigger>umt</tabTrigger>
+	<scope>source.cs</scope>
+</snippet>

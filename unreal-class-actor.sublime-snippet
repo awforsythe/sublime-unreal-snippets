@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+
+UCLASS()
+class A${TM_FILENAME/([^\.]+)\..*/$1/} : public AActor
+{
+	GENERATED_BODY()
+
+public:
+	$1	
+};
+
+]]></content>
+	<tabTrigger>uca</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

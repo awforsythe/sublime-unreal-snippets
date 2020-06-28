@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+#include "Log.h"
+
+DEFINE_LOG_CATEGORY(Log${TM_FILEPATH/.*\/Source\/(.*)\/(?:Private|Public)\/.*/$1/});
+
+]]></content>
+	<tabTrigger>ulc</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>
+
+
+

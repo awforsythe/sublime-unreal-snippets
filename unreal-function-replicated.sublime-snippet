@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+void A${TM_FILENAME/([^\.]+)\..*/$1/}::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+	DOREPLIFETIME(A${TM_FILENAME/([^\.]+)\..*/$1/}, ${1:SomeProperty});
+}
+
+]]></content>
+	<tabTrigger>ufr</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>

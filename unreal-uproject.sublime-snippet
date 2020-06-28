@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+{
+	"FileVersion": 3,
+	"EngineAssociation": "${2:4.25}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "$1",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
+
+]]></content>
+	<tabTrigger>uuproj</tabTrigger>
+</snippet>
