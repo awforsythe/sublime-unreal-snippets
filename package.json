@@ -1,0 +1,23 @@
+{
+	"name": "sublime-unreal-snippets",
+	"version": "1.0.0",
+	"description": "Snippets for writing Unreal Engine game code",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/awforsythe/sublime-unreal-snippets.git"
+	},
+	"keywords": [
+		"sublime",
+		"text",
+		"snippets",
+		"unreal",
+		"ue4",
+		"c++"
+	],
+	"author": "Alex Forsythe <awforsythe@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/awforsythe/sublime-unreal-snippets/issues"
+	},
+	"homepage": "https://github.com/awforsythe/sublime-unreal-snippets"
+}
