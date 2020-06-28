@@ -1,0 +1,24 @@
+<snippet>
+	<content><![CDATA[
+#include "${TM_FILENAME/([^\.]+)\..*/$1/}.h"
+#include "Modules/ModuleManager.h"
+
+#include "Log.h"
+
+void F${TM_FILENAME/([^\.]+)\..*/$1/}::StartupModule()
+{
+	UE_LOG(Log${TM_FILENAME/([^\.]+)\..*/$1/}, Log, TEXT("${TM_FILENAME/([^\.]+)\..*/$1/} module starting up"));
+}
+
+void F${TM_FILENAME/([^\.]+)\..*/$1/}::ShutdownModule()
+{
+	UE_LOG(Log${TM_FILENAME/([^\.]+)\..*/$1/}, Log, TEXT("${TM_FILENAME/([^\.]+)\..*/$1/} module shutting down"));
+}
+
+IMPLEMENT_GAME_MODULE(F${TM_FILENAME/([^\.]+)\..*/$1/}, ${TM_FILENAME/([^\.]+)\..*/$1/});
+
+
+]]></content>
+	<tabTrigger>umc</tabTrigger>
+	<scope>source.c++</scope>
+</snippet>
