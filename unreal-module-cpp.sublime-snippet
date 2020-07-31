@@ -17,7 +17,6 @@ void F${TM_FILENAME/([^\.]+)\..*/$1/}::ShutdownModule()
 
 IMPLEMENT_GAME_MODULE(F${TM_FILENAME/([^\.]+)\..*/$1/}, ${TM_FILENAME/([^\.]+)\..*/$1/});
 
-
 ]]></content>
 	<tabTrigger>umc</tabTrigger>
 	<scope>source.c++</scope>

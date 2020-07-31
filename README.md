@@ -30,6 +30,12 @@ Some of these snippets assume that your project's source modules follow the conv
 - **uco** - Declare a UObject subclass
 - **ucc** - Declare a UActorComponent subclass
 - **uca** - Declare an AActor subclass
+- **ucs** - Declare a UBlueprintFunctionLibrary subclass (i.e. a "statics" class)
+- **uci** - Declare a UInterface subclass with associated native interface
+
+**Macros (C++)**
+
+- **ume** - Insert an export macro in a type definition
 
 **Properties (C++)**
 
@@ -39,6 +45,9 @@ Some of these snippets assume that your project's source modules follow the conv
 
 **Functions (C++)**
 
+- **uff** - Declare a BlueprintCallable member function
+- **ufs** - Declare a BlueprintCallable static function with a WorldContextObject parameter
+- **ufi** - Declare a pure virtual function in a native interface class
 - **ufc** - Declare a constructor that accepts a const FObjectInitializer reference (in a class header)
 - **ufr** - Define the implementation of GetLifetimeReplicatedProps (in an actor source file)
 

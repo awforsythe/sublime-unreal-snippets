@@ -3,12 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "UObject/Object.h"
+#include "Kismet/BlueprintFunctionLibrary.h"
 
 #include "${TM_FILENAME/([^\.]+)\..*/$1/}.generated.h"
 
 UCLASS()
-class U${TM_FILENAME/([^\.]+)\..*/$1/} : public UObject
+class U${TM_FILENAME/([^\.]+)\..*/$1/} : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 
@@ -17,6 +17,6 @@ public:
 };
 
 ]]></content>
-	<tabTrigger>uco</tabTrigger>
+	<tabTrigger>ucs</tabTrigger>
 	<scope>source.c++</scope>
 </snippet>

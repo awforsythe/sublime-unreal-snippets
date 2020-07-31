@@ -13,7 +13,7 @@ class A${TM_FILENAME/([^\.]+)\..*/$1/} : public AActor
 	GENERATED_BODY()
 
 public:
-	$1	
+	$1
 };
 
 ]]></content>

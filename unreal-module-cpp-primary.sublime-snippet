@@ -17,7 +17,6 @@ void F${TM_FILENAME/([^\.]+)\..*/$1/}::ShutdownModule()
 
 IMPLEMENT_PRIMARY_GAME_MODULE(F${TM_FILENAME/([^\.]+)\..*/$1/}, ${TM_FILENAME/([^\.]+)\..*/$1/}, "${TM_FILENAME/([^\.]+)\..*/$1/}");
 
-
 ]]></content>
 	<tabTrigger>umcp</tabTrigger>
 	<scope>source.c++</scope>
